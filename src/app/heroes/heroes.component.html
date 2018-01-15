@@ -1,9 +1,11 @@
 <h2>My Heroes</h2>
-<div class="heroes">
-  <mat-card *ngFor="let hero of heroes">
-    <mat-card-title>{{hero.name}}</mat-card-title>
-    <mat-card-subtitle>teste</mat-card-subtitle>
-  </mat-card>
+<div class="containerX">
+  <div class="heroes coloredContainerX box" fxLayout="row">
+    <mat-card *ngFor="let hero of heroes" fxFlex.gt-sm="50" fxFlex="25">
+      <mat-card-title>{{hero.name}}</mat-card-title>
+      <mat-card-subtitle>teste</mat-card-subtitle>
+    </mat-card>
+  </div>
 </div>
 <button mat-raised-button>Basic</button>
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>

@@ -7,6 +7,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule, MatListModule} from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
 
+//flex layout
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
@@ -21,6 +23,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
   ],
   imports: [
     BrowserModule,
+    FlexLayoutModule,
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
